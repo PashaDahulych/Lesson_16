@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_16</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+               <a href="#" class="header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+               <nav class="header__menu menu">
+                  <ul class="menu__list">
+                     <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#">Courses</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#">Events</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+                  </ul>
+               </nav>
+               <div class="header__action action-header">
+                  <a href="#" class="action-header__button button"><span>Get consultation</span></a>
+                  <a href="#" class="action-header__in"><span>Log in / Register</span></a>
+               </div>
+         </div>
+      </header>
+      <main class="page">
+         <div class="page__container">
+            <div class="page__image">
+               <img src="img/illustration.svg" alt="illustration">
+            </div>
+            <section class="page__form form-page">
+               <h3 class="form-page__sub-title">Any questions?</h3>
+               <h2 class="form-page__title">Drop us a line</h2>
+               <form method="POST" action="https://jsonplaceholder.typicode.com/posts" class="form-page__question question-form">
+                  <div class="question-form__block">
+                     <div class="question-form__line">
+                        <label class="question-form__label" for="fname">First Name*</label>
+                        <input class="question-form__input" autocomplete="off" type="text" name="first-name" id="fname" placeholder="Your first name" required>
+                     </div>
+                     <div class="question-form__line">
+                        <label class="question-form__label" for="lname">Last Name*</label>
+                        <input class="question-form__input" autocomplete="off" type="text" name="last-name" id="lname" placeholder="Your last name" required>
+                     </div>
+                     <div class="question-form__line">
+                        <label class="question-form__label" for="email">Email*</label>
+                        <input class="question-form__input" autocomplete="off" type="email" name="email" id="email" placeholder="Your working email" required>
+                     </div>
+                     <div class="question-form__line">
+                        <label class="question-form__label" for="phone">Phone</label>
+                        <input class="question-form__input" autocomplete="off" type="email" name="phone" id="phone" placeholder="Your working email">
+                     </div>
+                     <div class="question-form__line question-form__line--flex-basis">
+                        <label class="question-form__label" for="message">Message*</label>
+                        <textarea name="message" id="message" class="question-form__input question-form__input--large" autocomplete="off" placeholder="Your message" required></textarea>
+                     </div>
+                  </div>
+                  <div class="question-form">
+                     <div class="question-form__title">Favorite car*</div>
+                     <div class="question-form__radio">
+                        <input checked class="question-form__input question-form__input--radio" id="car-01" required value="bmw" name="car" type="radio">
+                        <label class="question-form__label question-form__label--radio" for="car-01">BMW</label>
+                     </div>
+                     <div class="question-form__radio">
+                        <input class="question-form__input question-form__input--radio" id="car-02" required name="car" value="mercedes" type="radio">
+                        <label class="question-form__label question-form__label--radio" for="car-02">Mercedes</label>
+                     </div>
+                  </div>
+                  <div class="question-form__submit-block">
+                     <div class="question-form__line question-form__line--one checkbox">
+                        <input type="checkbox" class="checkbox__input" name="communication" id="communication">
+                        <label for="communication" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+                     </div>
+                     <button type="submit" class="question-form__button button button--large"><span>Send message</span></button>
+                  </div>
+               </form>
+            </section>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">footer</div>
+      </footer>
+   </div>
+</body>
+</html>
